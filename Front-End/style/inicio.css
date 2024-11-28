@@ -1,0 +1,22 @@
+#option:hover {
+    color: #0bacec;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    height: 597px;
+}
+
+
+#option{
+    color: #f4faff;
+    margin-left: 30px;
+
+}
+
+#navbarSupportedContent{
+    margin-left: 30px;
+}
+
+
+

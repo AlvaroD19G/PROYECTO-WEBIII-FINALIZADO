@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario con Axios</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="./style/agregarUsuario.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Agregar Nuevo Usuario</h1>
+        <form id="userForm">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" placeholder="Escribe tu nombre" required>
+
+            <label for="phone">Teléfono</label>
+            <input type="tel" id="phone" name="phone" placeholder="Escribe tu teléfono" required>
+
+            <label for="address">Dirección</label>
+            <input type="text" id="address" name="address" placeholder="Escribe tu dirección" required>
+
+            <button type="submit">Guardar</button>
+        </form>
+        <button class="secondary-button" onclick="redirectToList()">Ir a lista de usuarios</button>
+    </div>
+</body>
+
+<script src="./js/agregarUsuario.js"></script>
+
+</html>

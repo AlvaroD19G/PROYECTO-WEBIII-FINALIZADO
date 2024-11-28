@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Mascotas</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="./style/listas.css">
+</head>
+<body>
+    <h1>Gestión de Mascotas</h1>
+    <div class="search-container" style="max-width: auto; margin-bottom: 20px;">
+        <input type="text" id="searchInput" placeholder="Buscar por nombre, raza o usuario..." style="width: 100%; padding: 8px; font-size: 14px;">
+    </div>
+    
+    <table id="petsTable">
+        <thead>
+            <tr>
+                <th style="text-align: center;">ID</th>
+                <th style="text-align: center;">Nombre</th>
+                <th style="text-align: center;">Raza</th>
+                <th style="text-align: center;">Edad</th>
+                <th style="text-align: center;">usuario</th>
+                <th style="text-align: center;">Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <div class="overlay" id="overlay"></div>
+    <div class="modal" id="updateModal">
+        <div class="modal-header">Actualizar Mascota</div>
+        <input type="hidden" id="petId"> 
+        <input id="petName" placeholder="Nombre">
+        <input id="petBreed" placeholder="Raza">
+        <input id="petAge" type="number" placeholder="Edad">
+        <input id="petOwnerId" type="hidden">
+        <div class="modal-buttons">
+            <button id="saveChangesBtn">Guardar</button>
+            <button id="cancelBtn">Cancelar</button>
+        </div>
+    </div>
+
+    <script src="./js/listaMascotas.js"></script>
+</body>
+</html>

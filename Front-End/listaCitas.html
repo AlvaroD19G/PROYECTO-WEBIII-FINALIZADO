@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Citas</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="./style/listas.css">
+</head>
+<body>
+    <h1>Gestión de Citas</h1>
+    
+    <div class="search-container" style="max-width: auto; margin-bottom: 20px;">
+        <input type="text" id="searchInput" placeholder="Buscar por nombre de mascota, fecha o usuario..." style="width: 100%; padding: 8px; font-size: 14px;">
+    </div>
+    
+    <table id="appointmentsTable">
+        <thead>
+            <tr>
+                <th style="text-align: center;">ID</th>
+                <th style="text-align: center;">Mascota</th>
+                <th style="text-align: center;">Fecha</th>
+                <th style="text-align: center;">Hora</th>
+                <th style="text-align: center;">Descripción</th>
+                <th style="text-align: center;">Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <div class="overlay" id="overlay"></div>
+    <div class="modal" id="updateModal">
+        <div class="modal-header">Actualizar Cita</div>        
+        <input type="hidden" id="appointmentId">
+        <input id="appointmentDate" type="date" placeholder="Fecha de la cita" required>
+        <input id="appointmentTime" type="time" placeholder="Hora de la cita" required>
+        <textarea id="appointmentDescription" placeholder="Descripción" required></textarea>        
+        <div class="modal-buttons">
+            <button id="saveChangesBtn">Guardar</button>
+            <button id="cancelBtn">Cancelar</button>
+        </div>
+    </div>
+
+    <script src="./js/listaCitas.js"></script>
+</body>
+</html>

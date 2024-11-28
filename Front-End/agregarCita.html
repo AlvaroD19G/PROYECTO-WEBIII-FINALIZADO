@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Evento para Mascota</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="./style/agregarUsuario.css">
+   
+</head>
+<body>
+    <div class="form-container">
+        <h1>Agregar Nueva Cita</h1>
+        <form id="petEventForm">
+            <label for="petSelect">Selecciona Mascota</label>
+            <select id="petSelect" name="petSelect" required>
+                <option value="">Selecciona una mascota</option>
+            </select>
+
+            <label for="eventDate">Fecha</label>
+            <input type="date" id="eventDate" name="eventDate" required>
+
+            <label for="eventTime">Hora</label>
+            <input type="time" id="eventTime" name="eventTime" required>
+
+            <label for="description">Descripción</label>
+            <textarea id="description" name="description" rows="4" placeholder="Escribe una descripción de la cita" required></textarea>
+
+            <button type="submit">Guardar Cita</button>
+        </form>
+        <button class="secondary-button" onclick="redirectToList()">Ir a lista de citas</button>
+    </div>
+
+    <script src="./js/agregarCita.js"></script>
+</body>
+</html>
