@@ -1,4 +1,4 @@
-const apiUrl = 'http://mascotas2.freesite.online/WebIIIVeterinara/Controlador/mascotasController.php';
+const apiUrl = 'http://gestionveterinariaapi.azurewebsites.net/PROYECTO WEBIII FINALIZADO/WebIIIVeterinara/Controlador/mascotasController.php';
 
 const loadPets = () => {
     axios.get(`${apiUrl}?accion=listar`)

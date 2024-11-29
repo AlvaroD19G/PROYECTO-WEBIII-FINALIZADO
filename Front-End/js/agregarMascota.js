@@ -19,7 +19,7 @@ form.addEventListener('submit', function(event) {
         id_usuario: parseInt(usuarioId),
     };
 
-    axios.post('http://mascotas2.freesite.online/WebIIIVeterinara/Controlador/mascotasController.php?accion=insertar', petData, {
+    axios.post('http://gestionveterinariaapi.azurewebsites.net/PROYECTO WEBIII FINALIZADO/WebIIIVeterinara/Controlador/mascotasController.php?accion=insertar', petData, {
         headers: {
             'Content-Type': 'application/json'
         }
@@ -35,7 +35,7 @@ form.addEventListener('submit', function(event) {
 });
 
 function cargarusuarios() {
-    axios.get('http://mascotas2.freesite.online/WebIIIVeterinara/Controlador/usuariosController.php?accion=listar')
+    axios.get('http://gestionveterinariaapi.azurewebsites.net/PROYECTO WEBIII FINALIZADO/WebIIIVeterinara/Controlador/usuariosController.php?accion=listar')
     .then(response => {
         console.log(response.data);
         const usuarios = response.data; 

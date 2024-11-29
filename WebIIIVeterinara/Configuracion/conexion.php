@@ -1,9 +1,9 @@
 <?php
 class Conexion {
-    private $host = "sql201.infinityfree.com:3306";
-    private $dbname = "if0_37800640_veterinaria2";
-    private $username = "if0_37800640";
-    private $password = "bEM5MaQA4nhV";
+    private $host = "gestionveterinaria.mysql.database.azure.com";
+    private $dbname = "gestion_veterinaria";
+    private $username = "adminuser@gestionveterinaria";
+    private $password = "Admin123!";
     public $conn;
 
     public function __construct() {
