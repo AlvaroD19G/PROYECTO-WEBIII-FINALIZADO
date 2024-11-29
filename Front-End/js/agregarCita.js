@@ -19,7 +19,7 @@ form.addEventListener('submit', function(event) {
         descripcion : descripcion,
     };
 
-    axios.post('http://gestionveterinariaapi.azurewebsites.net/PROYECTO-WEBIII-FINALIZADO/WebIIIVeterinara/Controlador/citasController.php?accion=insertar', eventData, {
+    axios.post('http://gestionveterinariaapi.azurewebsites.net/WebIIIVeterinara/Controlador/citasController.php?accion=insertar', eventData, {
         headers: {
             'Content-Type': 'application/json'
         }
@@ -35,7 +35,7 @@ form.addEventListener('submit', function(event) {
 });
 
 function cargarMascotas() {
-    axios.get('http://gestionveterinariaapi.azurewebsites.net/PROYECTO-WEBIII-FINALIZADO/WebIIIVeterinara/Controlador/mascotasController.php?accion=listar')
+    axios.get('http://gestionveterinariaapi.azurewebsites.net/WebIIIVeterinara/Controlador/mascotasController.php?accion=listar')
     .then(response => {
         const usuarios = response.data; 
         const ownerSelect = document.getElementById('petSelect');

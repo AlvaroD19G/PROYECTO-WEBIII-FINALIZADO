@@ -11,7 +11,7 @@ form.addEventListener('submit', function(event) {
         direccion: direccion
     };
 
-    axios.post('http://gestionveterinariaapi.azurewebsites.net/PROYECTO-WEBIII-FINALIZADO/WebIIIVeterinara/Controlador/usuariosController.php?accion=insertar', formData, {
+    axios.post('http://gestionveterinariaapi.azurewebsites.net/WebIIIVeterinara/Controlador/usuariosController.php?accion=insertar', formData, {
         headers: {
             'Content-Type': 'application/json'
         }
