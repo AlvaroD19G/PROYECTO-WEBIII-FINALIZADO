@@ -11,7 +11,7 @@ form.addEventListener('submit', function(event) {
         direccion: direccion
     };
 
-    axios.post('http://mascotas.mysql.database.azure.com/WebIIIVeterinara/Controlador/usuariosController.php?accion=insertar', formData, {
+    axios.post('http://mascotasapi.azurewebsites.net/WebIIIVeterinara/Controlador/usuariosController.php?accion=insertar', formData, {
         headers: {
             'Content-Type': 'application/json'
         }

@@ -1,4 +1,4 @@
-const apiUrl = 'http://mascotas.mysql.database.azure.com/WebIIIVeterinara/Controlador/mascotasController.php';
+const apiUrl = 'http://mascotasapi.azurewebsites.net/WebIIIVeterinara/Controlador/mascotasController.php';
 
 const loadPets = () => {
     axios.get(`${apiUrl}?accion=listar`)

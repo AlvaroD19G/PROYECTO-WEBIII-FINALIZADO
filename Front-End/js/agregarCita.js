@@ -19,7 +19,7 @@ form.addEventListener('submit', function(event) {
         descripcion : descripcion,
     };
 
-    axios.post('http://mascotas.mysql.database.azure.com/WebIIIVeterinara/Controlador/citasController.php?accion=insertar', eventData, {
+    axios.post('http://mascotasapi.azurewebsites.net/WebIIIVeterinara/Controlador/citasController.php?accion=insertar', eventData, {
         headers: {
             'Content-Type': 'application/json'
         }
@@ -35,7 +35,7 @@ form.addEventListener('submit', function(event) {
 });
 
 function cargarMascotas() {
-    axios.get('http://mascotas.mysql.database.azure.com/WebIIIVeterinara/Controlador/mascotasController.php?accion=listar')
+    axios.get('http://mascotasapi.azurewebsites.net/WebIIIVeterinara/Controlador/mascotasController.php?accion=listar')
     .then(response => {
         const usuarios = response.data; 
         const ownerSelect = document.getElementById('petSelect');
