@@ -1,6 +1,6 @@
 <?php
 class Conexion {
-    private $host = "mascotasapi.azurewebsites.net";
+    private $host = "mascotas.mysql.database.azure.com";
     private $dbname = "veterinaria";
     private $username = "adminuser@mascotas";
     private $password = "Admin123!";
