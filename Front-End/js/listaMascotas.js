@@ -18,7 +18,7 @@ const renderTable = (pets) => {
                 <td style="text-align: center;">${pet.nombre}</td>
                 <td style="text-align: center;">${pet.raza}</td>
                 <td style="text-align: center;">${pet.edad}</td>
-                <td style="text-align: center;">${pet.usuario}</td>
+                <td style="text-align: center;">${pet.usuarios}</td>
                 <td style="text-align: center;">
                     <button class="update-btn" onclick="openUpdateModal(${pet.id}, '${pet.nombre}', '${pet.raza}', ${pet.edad}, '${pet.usuario}')">Actualizar</button>
                     <button class="delete-btn" onclick="deletePet(${pet.id})">Eliminar</button>
