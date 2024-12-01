@@ -1,4 +1,4 @@
-const apiUrl = 'http://mascotasapi.azurewebsites.net/WebIIIVeterinara/Controlador/usuariosController.php';
+const apiUrl = 'https://mascotasapi.azurewebsites.net/WebIIIVeterinara/Controlador/usuariosController.php';
 
 
 const loadOwners = () => {

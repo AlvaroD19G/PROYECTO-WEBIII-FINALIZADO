@@ -1,4 +1,4 @@
-const apiUrl = 'http://mascotasapi.azurewebsites.net/WebIIIVeterinara/Controlador/citasController.php'; 
+const apiUrl = 'https://mascotasapi.azurewebsites.net/WebIIIVeterinara/Controlador/citasController.php'; 
 
 const loadAppointments = () => {
     axios.get(`${apiUrl}?accion=listar`)  
