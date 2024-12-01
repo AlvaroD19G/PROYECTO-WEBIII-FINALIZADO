@@ -1,4 +1,4 @@
-const apiUrl = 'http://gestionveterinariaapi.azurewebsites.net/WebIIIVeterinara/Controlador/citasController.php'; 
+const apiUrl = 'http://mascotas.mysql.database.azure.com/WebIIIVeterinara/Controlador/citasController.php'; 
 
 const loadAppointments = () => {
     axios.get(`${apiUrl}?accion=listar`)  

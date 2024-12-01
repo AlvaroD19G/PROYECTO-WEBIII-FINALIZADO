@@ -1,8 +1,8 @@
 <?php
 class Conexion {
-    private $host = "gestionveterinaria.mysql.database.azure.com";
-    private $dbname = "gestion_veterinaria";
-    private $username = "adminuser@gestionveterinaria";
+    private $host = "mascotas.mysql.database.azure.com";
+    private $dbname = "veterinaria";
+    private $username = "adminuser@mascotas";
     private $password = "Admin123!";
     public $conn;
 
